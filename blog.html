@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+    <link rel="stylesheet" href="school.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav class="nav-bar">
+        <a href="index.html"><img class="logo" src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()" id="nav-links"></i>
+
+          <ul>
+            <li><a href="school.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Degree & Online Programs For 2025</h1>
+    </section>
+    <!---Blog page content-->
+
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img class="blog-image" src="images/certificate.jpg" />
+          <h2>Our degree & online programs for 2025</h2>
+          <p>
+            Choosing the right degree is a crucial step toward building a
+            successful career. At [University Name], we offer a diverse range of
+            undergraduate and postgraduate degree programs designed to meet the
+            evolving demands of today’s world.
+          </p>
+          <br />
+          <p>
+            Our goal is not just to give you a certificate, but to equip you
+            with the mindset, experience, and values needed to make an impact in
+            your chosen field.
+          </p>
+          <br />
+          <p>
+            Whether you’re passionate about technology, business, education,
+            healthcare, law, or the arts, our programs are built to provide both
+            academic knowledge and practical skills that prepare you for
+            real-world challenges.
+          </p>
+
+          <div class="comment-box">
+            <h3>Leave a Comment</h3>
+            <form class="comment-form">
+              <input type="text" placeholder="Enter name" />
+              <input type="text" placeholder="Email" />
+              <textarea rows="5" placeholder="Your Comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                Post Comment
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="blog-right">
+          <h3>Post Ctegories</h3>
+          <div>
+            <span>Business Analytics</span>
+          </div>
+          <div>
+            <span>Computer Science</span>
+          </div>
+          <div>
+            <span>Software Engineering</span>
+          </div>
+          <div>
+            <span>Information Technology</span>
+          </div>
+          <div>
+            <span>Maths for Science</span>
+          </div>
+          <div>
+            <span>Robotics Engineering</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Since its establishment, has maintained a reputation for academic
+        excellence, innovation, and integrity. Our mission is to produce<br />
+        professionals who are not only competent in their fields,<br />
+        but also guided by ethical principles and a desire to impact society
+        positively.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-youtube-play"></i>
+      </div>
+      <p>Designed by @philux solutions</p>
+    </section>
+    <!------Javascript toggle menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

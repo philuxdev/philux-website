@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+    <link rel="stylesheet" href="school.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav class="nav-bar">
+        <a href="index.html"><img class="logo" src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()" id="nav-links"></i>
+
+          <ul>
+            <li><a href="school.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!----About Us---->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are the Worl'ds largest University</h1>
+          <p>
+            A center of academic excellence, committed to nurturing well-rounded
+            individuals through high-quality teaching, research, and community
+            engagement. Founded on strong moral and ethical foundations, the
+            university provides a holistic education that equips students with
+            both professional skills and personal values.
+          </p>
+          <a href="" class="hero-btn red-btn">Explore Now</a>
+        </div>
+
+        <div class="about-col">
+          <img class="about-image" src="images/about.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Since its establishment, has maintained a reputation for academic
+        excellence, innovation, and integrity. Our mission is to produce<br />
+        professionals who are not only competent in their fields,<br />
+        but also guided by ethical principles and a desire to impact society
+        positively.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-youtube-play"></i>
+      </div>
+      <p>Designed by @philux solutions</p>
+    </section>
+    <!------Javascript toggle menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
